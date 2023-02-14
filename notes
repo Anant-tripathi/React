@@ -1,0 +1,20 @@
+npm installs anything permanently whereas commands that are run using npx are one time only.
+
+in jsx classes are replaced with className
+
+Javascript can be used within curly brackets.
+
+components can be of two types: class based and function based
+
+all things to be returned need to be wrapped in something and if nothing then a blank opening and closing tag will work<></>
+
+to use bootstap items from GETBOOTSTRAP.COM:
+1. copy script tag from starter template
+2. copy css tag from starter template
+3. paste them in index.html of public folder
+
+for creating optimized react apps with bootstrap use the: REACT BOOTSTRAP LIBRARY
+
+es7 react/reduct/graphQL/react-native snippets: extension for vs code
+
+
