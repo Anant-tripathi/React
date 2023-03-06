@@ -17,4 +17,15 @@ for creating optimized react apps with bootstrap use the: REACT BOOTSTRAP LIBRAR
 
 es7 react/reduct/graphQL/react-native snippets: extension for vs code
 
+for importing items and components that do not use default in their export line need to be 
+imported using curly brackets as objects or items
+
+props are js objects which are passed from parent component to child components
+
+prop types is used to declare about what type is of the props that are recived by parents which is used to create a more rhobust code by forcing strict type checking and if wrong type is passed then a warning is generated
+
+default props are used to declare the case scenario in which a user does not pass a value
+
+can be used to create single page applications or a component of multipage applications
+
 
