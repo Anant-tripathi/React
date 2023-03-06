@@ -8,6 +8,7 @@ export default function App() {
     setCount((count) => count + 1);
     setCount((count) => count + 1);
   }
+
   // the count is evaluated and render time so multiple calls to
   // the same function in same click will only increase count by 1.
 
