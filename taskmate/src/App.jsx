@@ -1,43 +1,55 @@
 import "./App.css";
 import { useState } from "react";
+
 export default function App() {
-  const [count, setCount] = useState(0);
+  const [tasks, setTasks] = useState([
+    { id: 1, name: "Learn Javascript", completed: true },
+    { id: 2, name: "Learn React", completed: false },
+    { id: 3, name: "Learn Express", completed: false },
+  ]);
 
-  function handleAdd() {
-    // setCount(count + 1);
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-  }
+  const [show, setShow] = useState(false);
 
-  // the count is evaluated and render time so multiple calls to
-  // the same function in same click will only increase count by 1.
-
-  // the count when updated using an arrow function syntax will be
-  // updated the instant the call is made to the function and the changes will
-  // stay.
-
-  function handleSub() {
-    setCount(count - 1);
-  }
-
-  function handleReset() {
-    setCount(0);
+  function handleDelete(id) {
+    setTasks(tasks.filter((task) => task.id !== id));
   }
 
   return (
     <div className="App">
-      <div className="box">
-        <p>{count}</p>
-        <button onClick={handleAdd} className="add">
-          ADD
+      <h1>Task List</h1>
+      <ul>
+        <button className="trigger" onClick={() => setShow(!show)}>
+          Toggle
         </button>
-        <button onClick={handleSub} className="sub">
-          SUB
-        </button>
-        <button onClick={handleReset} className="reset">
-          RESET
-        </button>
-      </div>
+        {show &&
+          tasks.map((task) => (
+            <li
+              key={task.id}
+              className={task.completed ? "completed" : "incomplete"}
+            >
+              <span>
+                {task.id} - {task.name}
+              </span>
+              <button onClick={() => handleDelete(task.id)} className="delete">
+                Delete
+              </button>
+            </li>
+          ))}
+      </ul>
     </div>
   );
 }
+
+//conditional templates -> following is used to create a toggle show/hide 
+//button which sets reverse of initial state of a hook. 
+        // <button className="trigger" onClick={() => setShow(!show)}>
+        //   Toggle
+        // </button>
+//
+// Hooks => Hooks are functions that let you “hook into” React state and
+// lifecycle features from function components. Hooks don’t work inside classes
+// — they let you use React without classes. Example- useState is a hook which 
+// allows you to use states without classes.
+// Two rules for using hooks:
+// 1. only call hooks at top level.
+// 2. only call hooks from react functions.
