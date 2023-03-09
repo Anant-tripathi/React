@@ -1,24 +1,8 @@
-.App {
+.App{
   text-align: center;
+  padding: 0px 10px;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-
-
-.logo {
-  height: 40px;
-  width: 40px;
-}
-
-.logo img {
-  max-width: 40px;
-}
-
-.hidden {
+.hidden{
   display: none;
 }
-
