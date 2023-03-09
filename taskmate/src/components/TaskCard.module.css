@@ -1,0 +1,11 @@
+.title {
+  background-color: rgb(142, 189, 255);
+}
+
+/* Module Level Styling 
+* These are the modules which are used to limit the 
+* scope of css and this only works with classes and 
+* ids and not with tags such as span, button, etc. It 
+* will function but the scope will not be limited to 
+* the class for which it is defined 
+* */

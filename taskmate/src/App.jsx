@@ -1,13 +1,14 @@
-import "./App.css";
 import { Header } from "./components/Header";
 import { TaskList } from "./components/TaskList";
+import { Footer } from "./components/Footer";
+import "./App.css";
 
 export default function App() {
-  const info = "Random";
   return (
     <div className="App">
       <Header></Header>
-      <TaskList info={info} />
+      <TaskList />
+      <Footer />
     </div>
   );
 }
