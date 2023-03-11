@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 10001,
+      "name": "Basics to Advanced in react",
+      "price": 29,
+      "in_stock": true
+    },
+    {
+      "id": 10002,
+      "name": "Django Framework in react",
+      "price": 99,
+      "in_stock": true
+    },
+    {
+      "id": 10003,
+      "name": "The complete guide to backend development",
+      "price": 49,
+      "in_stock": true
+    },
+    {
+      "id": 10004,
+      "name": "Build a blockchain from scratch in Go",
+      "price": 19,
+      "in_stock": false
+    }
+  ]
+}
